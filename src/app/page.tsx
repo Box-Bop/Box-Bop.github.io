@@ -30,13 +30,8 @@ export default function Home() {
 				</div>
 			</div>
 
-			{/* <div>
-				<h1 className="text-5xl font-bold text-center">
-					Box Office News!
-				</h1>
-			</div> */}
 			<div className="card bg-base-300 rounded-box max-w-5xl mx-auto p-8 my-8">
-				<div className="flex">
+				<div className="md:flex">
 					<div className="flex-grow max-w-3xl text-center m-auto px-6">
 						<h1 className="text-5xl font-bold">Roberts Pauls Tohver</h1>
 						<p className="py-6">
@@ -48,20 +43,16 @@ export default function Home() {
 						relationships with colleagues and partners.
 						</p>
 					</div>
-					<div className="flex-none flex-column px-2">
+					<div className="flex-none flex-column px-2 max-w-[300px] mx-auto">
 						<Image
-							className="rounded-xl"
+							className="rounded-xl md:h-max md:w-max"
 							src={"/pfp.jpg"}
 							alt="Profile picture"
-							width="200"
-							height="200"
+							width="300"
+							height="300"
 						/>
-						{/* <div className="avatar">
-						<div className="w-64 rounded">
-							<img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
-						</div>
-					</div> */}
-						<ul className="menu bg-base-200 rounded-box w-m mt-4">
+
+						<ul className="menu bg-background rounded-box w-m mt-4">
 							<li>
 								<a>
 									<svg
