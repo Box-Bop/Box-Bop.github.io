@@ -33,14 +33,22 @@ export default function Home() {
 			<div className="card bg-base-300 rounded-box max-w-5xl mx-auto p-8 my-8">
 				<div className="md:flex">
 					<div className="flex-grow max-w-3xl text-center m-auto px-6">
-						<h1 className="text-5xl font-bold">Roberts Pauls Tohver</h1>
+						<h1 className="text-5xl font-bold">
+							Roberts Pauls Tohver
+						</h1>
 						<p className="py-6">
-						I am an IT professional with a strong foundation in creating and enhancing digital solutions.
-						With hands-on experience in IT support, I am drawn to complex challenges, initiating innovation,
-						and data analysis aimed at improving processes. I have a keen interest in the latest technologies and their potential,
-						along with a desire to continually develop my skills to create valuable solutions that drive company growth.
-						I am confident in my ability to adapt and work in a team not only helps achieve goals but also fosters positive
-						relationships with colleagues and partners.
+							I am an IT professional with a strong foundation in
+							creating and enhancing digital solutions. With
+							hands-on experience in IT support, I am drawn to
+							complex challenges, initiating innovation, and data
+							analysis aimed at improving processes. I have a keen
+							interest in the latest technologies and their
+							potential, along with a desire to continually
+							develop my skills to create valuable solutions that
+							drive company growth. I am confident in my ability
+							to adapt and work in a team not only helps achieve
+							goals but also fosters positive relationships with
+							colleagues and partners.
 						</p>
 					</div>
 					<div className="flex-none flex-column px-2 max-w-[300px] mx-auto">
@@ -54,7 +62,11 @@ export default function Home() {
 
 						<ul className="menu bg-background rounded-box w-m mt-4">
 							<li>
-								<a>
+								<a
+									className="link link-hover"
+									href="https://www.linkedin.com/in/roberts-pauls-tohver"
+									target="_blank"
+								>
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
 										className="h-7 w-7"
@@ -73,7 +85,11 @@ export default function Home() {
 								</a>
 							</li>
 							<li>
-								<a>
+								<a
+									className="link link-hover"
+									href="https://github.com/Box-Bop"
+									target="_blank"
+								>
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
 										className="h-7 w-7"
@@ -92,7 +108,11 @@ export default function Home() {
 								</a>
 							</li>
 							<li>
-								<a>
+								<a
+									className="link link-hover"
+									href="mailto:tohverrobert@gmail.com"
+									target="_blank"
+								>
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
 										className="h-7 w-7"
@@ -115,7 +135,60 @@ export default function Home() {
 				</div>
 			</div>
 
-			<Timeline />
+			<div
+				role="tablist"
+				className="tabs tabs-bordered tabs-lg p-8 max-w-[1300px] mx-auto"
+			>
+
+				<input
+					type="radio"
+					name="my_tabs_2"
+					role="tab"
+					className="tab mx-auto"
+					aria-label="Experience"
+					defaultChecked
+				/>
+				<div
+					role="tabpanel"
+					className="tab-content bg-base-100 border-base-300 rounded-box p-6"
+				>
+					<Timeline />
+				</div>
+
+				<input
+					type="radio"
+					name="my_tabs_2"
+					role="tab"
+					className="tab"
+					aria-label="Skills"
+				/>
+				<div
+					role="tabpanel"
+					className="tab-content bg-base-100 border-base-300 rounded-box p-6"
+				>
+					<div className="flex">
+						<progress
+							className="progress progress-primary w-56"
+							value="70"
+							max="100"
+						></progress>
+					</div>
+				</div>
+
+				<input
+					type="radio"
+					name="my_tabs_2"
+					role="tab"
+					className="tab"
+					aria-label="Projects"
+				/>
+				<div
+					role="tabpanel"
+					className="tab-content bg-base-100 border-base-300 rounded-box p-6"
+				>
+					Tab content 3
+				</div>
+			</div>
 		</div>
 	);
 }
