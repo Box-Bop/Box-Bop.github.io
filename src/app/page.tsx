@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Timeline from "./components/timeline";
+import Skills from "./components/skills";
 
 export default function Home() {
 	return (
@@ -137,7 +138,7 @@ export default function Home() {
 
 			<div
 				role="tablist"
-				className="tabs tabs-bordered tabs-lg p-8 max-w-[1300px] mx-auto"
+				className="tabs tabs-lifted tabs-lg p-8 max-w-[1300px] mx-auto"
 			>
 
 				<input
@@ -166,13 +167,7 @@ export default function Home() {
 					role="tabpanel"
 					className="tab-content bg-base-100 border-base-300 rounded-box p-6"
 				>
-					<div className="flex">
-						<progress
-							className="progress progress-primary w-56"
-							value="70"
-							max="100"
-						></progress>
-					</div>
+					<Skills/>
 				</div>
 
 				<input
