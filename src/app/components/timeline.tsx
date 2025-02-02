@@ -42,7 +42,7 @@ const personalTimeline = [
 export default function Timeline() {
 	return (
 		<div>
-			<ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical max-w-7xl m-auto px-8">
+			<ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical max-w-7xl m-auto px-0 sm:px-8">
 				{personalTimeline.map((item, index) => (
 					<li key={index}>
 						{(item.done || personalTimeline[index - 1].done) &&

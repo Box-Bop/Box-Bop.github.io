@@ -24,12 +24,6 @@ const skillsets: Skillset[] = [
 					"While I haven't built many large-scale databases, I understand how they work and how to be careful with migrations. I haven't accidentally deleted any production DB's.... yet",
 			},
 			{
-				title: "Linux",
-				value: 70,
-				tooltip:
-					"I have daily driven Linux for at least 5 years now. I don't have much experience in building/managing server configs, but I'm not afraid of using a terminal. I also know how to exit Vim.",
-			},
-			{
 				title: "Python",
 				value: 60,
 				tooltip:
@@ -67,6 +61,12 @@ const skillsets: Skillset[] = [
 				tooltip:
 					"I've been designing and printing various 3D parts over the years. It's fun being able to make something in CAD and have it automagically be brought to life.",
 			},
+			{
+				title: "Linux",
+				value: 70,
+				tooltip:
+					"I have daily driven Linux for at least 5 years now. I don't have much experience in building/managing server configs, but I'm not afraid of using a terminal. I also know how to exit Vim.",
+			},
 		],
 	},
 ];
@@ -80,7 +80,7 @@ export default function Skills() {
 
 				return (
 					<li key={index} className="flex-grow">
-						<h1 className="text-3xl font-bold mx-auto w-fit">
+						<h1 className="text-3xl font-bold mx-auto w-fit pt-4 sm:pt-0">
 							{category}
 						</h1>
 						<ul className="w-fit mx-auto">

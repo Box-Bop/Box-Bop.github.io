@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Timeline from "./components/timeline";
 import Skills from "./components/skills";
+import Projects from "./components/projects";
 
 export default function Home() {
 	return (
-		<div className="">
-			<div className="navbar bg-base-300">
+		<div className="sm:py-16 py-8 sm:px-8 px-4">
+			{/* <div className="navbar bg-base-300">
 				<div className="flex-1">
 					<a className="btn btn-ghost text-xl">daisyUI</a>
 				</div>
@@ -29,9 +30,9 @@ export default function Home() {
 						</li>
 					</ul>
 				</div>
-			</div>
+			</div> */}
 
-			<div className="card bg-base-300 rounded-box max-w-5xl mx-auto p-8 my-8">
+			<div className="card bg-base-300 rounded-box max-w-5xl mx-auto sm:p-8 p-2 my-8">
 				<div className="md:flex">
 					<div className="flex-grow max-w-3xl text-center m-auto px-6">
 						<h1 className="text-5xl font-bold">
@@ -138,7 +139,7 @@ export default function Home() {
 
 			<div
 				role="tablist"
-				className="tabs tabs-lifted tabs-lg p-8 max-w-[1300px] mx-auto"
+				className="tabs tabs-lifted tabs-lg max-w-[1300px] mx-auto"
 			>
 
 				<input
@@ -181,7 +182,7 @@ export default function Home() {
 					role="tabpanel"
 					className="tab-content bg-base-100 border-base-300 rounded-box p-6"
 				>
-					Tab content 3
+					<Projects/>
 				</div>
 			</div>
 		</div>
