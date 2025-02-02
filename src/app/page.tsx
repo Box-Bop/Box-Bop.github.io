@@ -39,18 +39,22 @@ export default function Home() {
 							Roberts Pauls Tohver
 						</h1>
 						<p className="py-6">
-							I am an IT professional with a strong foundation in
-							creating and enhancing digital solutions. With
-							hands-on experience in IT support, I am drawn to
-							complex challenges, initiating innovation, and data
-							analysis aimed at improving processes. I have a keen
-							interest in the latest technologies and their
-							potential, along with a desire to continually
-							develop my skills to create valuable solutions that
-							drive company growth. I am confident in my ability
-							to adapt and work in a team not only helps achieve
-							goals but also fosters positive relationships with
-							colleagues and partners.
+							I love solving unique problems, especially through
+							automation. My journey into tech started in school,
+							but what really hooked me was streamlining
+							repetitive tasks — first with clunky Excel VBA
+							scripts, then later rewriting them in Python.
+							Outside of work, I’m always tinkering — whether it’s
+							experimenting with Raspberry Pis, automating my
+							home, or 3D printing just for fun. I enjoy being in
+							the office, where I can bounce ideas off people in
+							real time (texting just doesn’t cut it for me). My
+							colleagues would probably say I’m the guy who’s
+							always happy to take on the small but important
+							tasks that no one else wants to do. At the end of
+							the day, I just like building things that make life
+							easier — whether it’s for a team, a company, or just
+							for fun.
 						</p>
 					</div>
 					<div className="flex-none flex-column px-2 max-w-[300px] mx-auto">
@@ -141,7 +145,6 @@ export default function Home() {
 				role="tablist"
 				className="tabs tabs-lifted tabs-lg max-w-[1300px] mx-auto"
 			>
-
 				<input
 					type="radio"
 					name="my_tabs_2"
@@ -168,7 +171,7 @@ export default function Home() {
 					role="tabpanel"
 					className="tab-content bg-base-100 border-base-300 rounded-box p-6"
 				>
-					<Skills/>
+					<Skills />
 				</div>
 
 				<input
@@ -182,7 +185,7 @@ export default function Home() {
 					role="tabpanel"
 					className="tab-content bg-base-100 border-base-300 rounded-box p-6"
 				>
-					<Projects/>
+					<Projects />
 				</div>
 			</div>
 		</div>
