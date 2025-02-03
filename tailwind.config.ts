@@ -20,5 +20,6 @@ export default {
   ],
   daisyui: {
     themes: ["dark"],
+    darkTheme: "dark"
   },
 } satisfies Config;
